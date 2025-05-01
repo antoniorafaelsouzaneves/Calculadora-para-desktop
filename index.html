@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Minha Calculadora</title>
+</head>
+<body>
+    <div class="pai1">
+        <div style="margin: 0 auto;">
+            <div class="pai2">
+                <input type="text" id="input1" value="0">
+            </div>
+        </div>
+
+        <div class="buttoes">
+            <button class="button" onclick="isert('7')">
+                7
+            </button>
+            <button class="button" onclick="isert('8')">
+                8
+            </button>
+            <button class="button" onclick="isert('9')">
+                9
+            </button>
+            <button class="button" style="background-color: #ff9500;" onclick="isert('/')">
+                /
+            </button>
+            <button class="button" onclick="isert('4')">
+                4
+            </button>
+            <button class="button" onclick="isert('5')">
+                5
+            </button>
+            <button class="button" onclick="isert('6')">
+                6
+            </button>
+            <button class="button" style="background-color: #ff9500;" onclick="isert('*')">
+                X
+            </button>
+            <button class="button" onclick="isert('1')">
+                1
+            </button>
+            <button class="button" onclick="isert('2')">
+                2
+            </button>
+            <button class="button" onclick="isert('3')">
+                3
+            </button>
+            <button class="button" style="background-color: #ff9500;" onclick="isert('-')">
+                -
+            </button>
+            <button class="button" onclick="isert('0')">
+                0
+            </button>
+            <button class="button" onclick="isert('.')">
+                .
+            </button>
+            <button class="button" style="width: 175px; background-color: #00bbff;;" onclick="igual('=')">
+                =
+            </button>
+            <button class="button" style="background-color: #ff9500;" onclick="apagar('')"> 
+                C
+            </button>
+            <button class="button" style="background-color: #ff9500;" onclick="isert('+')">
+                +
+            </button>
+        </div>
+        
+    </div>
+    
+    <script>
+        let display = document.getElementById("input1");
+
+      
+            
+        function isert(value) {
+    if (display.value === "0") {
+        display.value = value;
+    } else {
+        display.value += value; 
+    }
+}
+
+        function apagar(value){
+
+            if(display.value != "0"){
+                display.value = "0";
+            } else{
+                display.value = "0";
+            }
+        }
+        function igual(value){
+            try{
+        display.value = eval(display.value)
+    } catch{
+        display.value = "Error"
+    }
+        }
+   
+
+    </script>
+</body>
+</html>

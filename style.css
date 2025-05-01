@@ -1,0 +1,54 @@
+*body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(120deg, blue, aqua)
+}
+.pai1{
+    width: 400px;
+    height: 580px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+}
+#input1{
+    width: 330px;
+    height: 40px;
+    margin: 40px auto;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: right;
+    letter-spacing: 2px;
+}
+h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.button{
+    width: 85px;
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    font-size: 30px;
+    transition: 1s ease;
+}
+.button:hover{
+    scale: 1.1;
+}
+.buttoes{
+    display: flex;
+    flex-wrap: wrap;    
+    margin-left: 20px;
+    align-content: center;
+    gap: 5px;
+}
+
